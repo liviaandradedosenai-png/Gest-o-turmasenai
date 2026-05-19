@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faviicon  Tag -->
+    <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico"  type="image/x-icon"> -->
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <title>DS:ORGANIZANDO TURMAS DE DESENVOLVIMENTO DE SISTEMAS</title>
+    <meta name="description" content="Aplicação para ...">
+    <meta name="keywords" content="ds, desenvolvimento de sistemas">
+    <meta nam="author" content="Gregorio Queiroz,15981057742">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu principal">
+            <ul>
+                <li><a href="#">Lellis Ito - A</a></li>
+                <li><a href="#">Lellis Ito - B</a></li>
+                <li><a href="#">Pinto do Amararal - A</a></li>
+                <li><a href="#">Pinto do Amararal - B</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <section>
+            <section>
+                <header>
+                    <h2>LELLIS ITO - A</h2>
+                </header>
+                <article>
+                    <ul class="lista-alunos lellis" id="alunosLellisItoA">
+                        <li>Lara</li>
+                        <li>Rafa</li>
+                        <li>Maisa</li>
+                        <li>Joao</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos
+                        <mark>
+                            <p id="qtdAlunosLellisItoA">0</p>
+                        </mark>
+                    </h3>
+                </footer>
+            </section>
+
+            <section>
+                <header>
+                    <h2>LELLIS ITO - B</h2>
+                </header>
+                <article>
+                    <ul class="lista-alunos lellis" id="alunosLellisItoB">
+                        <li>Livia</li>
+                        <li>Luiza</li>
+                        <li>Gaby</li>
+                        <li>Pedro</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos
+                        <mark>
+                            <p id="qtdAlunosLellisItoB">0</p>
+                        </mark>
+                    </h3>
+                </footer>
+            </section>
+
+            <section>
+                <header>
+                    <h2>PINTO DO AMARAL - A</h2>
+                </header>
+                <article>
+                    <ul class="lista-alunos amaral" id="alunosAmaralA">
+                        <li>José</li>
+                        <li>Lucas</li>
+                        <li>Igor</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos
+                        <mark>
+                            <p id="qtdalunosAmaralA">0</p>
+                        </mark>
+                    </h3>
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <h2>PINTO DO AMARAL - B</h2>
+                </header>
+                <article>
+                    <ul class="lista-alunos amaral" id="alunosAmaralB">
+                        <li>Allan</li>
+                        <li>Maike</li>
+                        <li>Nathan</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos
+                        <mark>
+                            <p id="qtdalunosAmaralB">0</p>
+                        </mark>
+                    </h3>
+                </footer>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <p>Desenvovido por <b><mark><a href="#">Livia</a></mark><b></p>
+    </footer>
+</body>
+<script>
+    function contarQuantidadeAlunosTurma(listaAlunos, qtdListaAlunos) {
+        const lista = document.getElementById(listaAlunos);
+        const quantidade = lista.querySelectorAll("li").length;
+
+        document.getElementById(qtdListaAlunos).textContent = quantidade;
+    }
+
+    contarQuantidadeAlunosTurma('alunosLellisItoA', 'qtdAlunosLellisItoA');
+    contarQuantidadeAlunosTurma('alunosLellisItoB', 'qtdAlunosLellisItoB');
+    contarQuantidadeAlunosTurma('alunosAmaralA', 'qtdalunosAmaralA');
+    contarQuantidadeAlunosTurma('alunosAmaralB', 'qtdalunosAmaralB');
+
+
+
+</script>
+<html>

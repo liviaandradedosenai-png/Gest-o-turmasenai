@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import "cor.css";
+
+@import "reset.css";
+
+@font-face{
+    font-family: letra;
+    src: url();
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+h2,h3 {
+    background-color: var(--cor0);
+}
+
+h4,h5 {
+    background-color: bisque;
+    background-color: var(--cor3);
+}
+header{
+    background-color: rgb(148, 47, 16);
+    color: rgb(0, 0, 0);
+}
+.menu{
+    background-color: transparent;
+    color: #ffff;
+}
+.menu ul{
+    list-style: none;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    color: #ffffff;
+    background-color: rgb(205, 99, 50);
+    padding: 20px;
+    border: 1px solid #000;
+}
+.menu ul li:nth-child(2n+1){
+    background-color: rgb(190, 44, 24);
+}
+.menu ul li a{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+section{
+    background-color: rgb(172, 65, 16);
+}
+section section section{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border: 2px solid #000;
+}
+header h2{
+    font-size: small;
+    text-align: center;
+}
+section section section footer{
+    background-color: rgb(255, 0, 0);
+}
+section section section footer h3{
+    font-size: smaller;
+}
+section section section footer p{
+    display: inline-block;
+}
+
+.lista-alunos{
+    list-style-type: circle;
+    padding-inline-start: 30px;
+}
